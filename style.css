@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10px 2%; /* Ajustei o padding para ser igual ao header */
+}
+
+header {
+    padding: 10px 0;
+    background-color: #1b2653;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.menu1,
+.menu2 {
+    display: flex;
+    align-items: center;
+}
+
+.menu1 a,
+.menu2 a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.menu1 a:hover,
+.menu2 a:hover {
+    color: #FE6613;
+}
+
+img {
+    max-width: 100;
+    display: block;
+}
+
+.card,
+.form-card {
+    flex: 1;
+    max-width: 400px;
+    margin: 10px;
+}
+
+.form-card {
+    text-align: center;
+}
+
+
+
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+    grid-gap: 20px;
+  }
+
+  .grid1 > div:nth-child(2 - n) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    align-items: center;
+  }
